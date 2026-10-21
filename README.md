@@ -9,7 +9,7 @@ Plain HTML + CSS. No build step, no JavaScript, no dependencies.
 - `styles.css` — shared stylesheet (colors are at the top in `:root`)
 - `images/` — logo (PNG + WebP), social-share image, app icon
 - `favicon.ico`, `favicon.png`, `robots.txt`, `sitemap.xml`
-- `CNAME` — contains `www.vebro.net`. Leave it in only if you're pointing the domain at GitHub Pages. If you're not ready yet, delete it.
+- `CNAME` — contains `vebro.net`. Leave it in only if you're pointing the domain at GitHub Pages. If you're not ready yet, delete it.
 - `.nojekyll` — tells GitHub to serve the files exactly as they are
 
 ## Upload to GitHub (web browser, no git needed)
@@ -19,7 +19,7 @@ Plain HTML + CSS. No build step, no JavaScript, no dependencies.
 3. Go to **Settings → Pages**. Under **Build and deployment** pick **Deploy from a branch**, branch **main**, folder **/ (root)**, then **Save**.
 4. After about a minute the site is live at `https://<your-username>.github.io/<repo-name>/`.
    - Note: the 404 page uses root links (`/styles.css`), so it only looks right on the custom domain or a `<username>.github.io` repo.
-5. Custom domain: once DNS is set (below), go to **Settings → Pages → Custom domain**, enter `www.vebro.net`, save, wait for the DNS check, then tick **Enforce HTTPS**.
+5. Custom domain: once DNS is set (below), go to **Settings → Pages → Custom domain**, enter `vebro.net`, save, wait for the DNS check, then tick **Enforce HTTPS**.
 
 ## DNS for vebro.net (at GoDaddy). Change only these records.
 | Type  | Name | Value |
