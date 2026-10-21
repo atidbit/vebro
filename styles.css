@@ -1,0 +1,78 @@
+/* Vebro Solutions — shared stylesheet */
+:root{
+  --ink:#111;
+  --muted:#4a4a4a;
+  --bg:#fff;
+  --soft:#f6f5f3;
+  --line:#e6e3df;
+  --orange:#fb7d45;   /* from logo */
+  --red:#f21313;      /* from logo */
+  --link:#b30f0f;     /* darker red for accessible link text (7:1 on white) */
+  --radius:14px;
+  --max:68rem;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-size:1.0625rem;line-height:1.6;display:flex;flex-direction:column;min-height:100vh}
+main{flex:1}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--link);text-underline-offset:.18em}
+a:hover{color:var(--ink)}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px;border-radius:4px}
+.wrap{width:min(100% - 2.5rem,var(--max));margin-inline:auto}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.6rem 1rem;z-index:10}
+.skip:focus{left:1rem;top:1rem}
+
+/* header */
+.site-header{border-bottom:1px solid var(--line)}
+.site-header::before{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--orange),var(--red))}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:.32em;font-size:1rem}
+.brand img{width:2rem;height:2rem}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;gap:.25rem;flex-wrap:wrap}
+.nav a{display:block;padding:.45rem .8rem;border-radius:999px;text-decoration:none;color:var(--ink);font-size:.95rem}
+.nav a:hover{background:var(--soft)}
+.nav a[aria-current="page"]{background:var(--ink);color:#fff}
+
+/* hero */
+.hero{text-align:center;padding-block:clamp(3.5rem,10vw,7rem) clamp(3rem,8vw,5rem)}
+.hero .logo{width:min(72%,22rem);margin:0 auto 2rem}
+.hero .brand-mark{margin:0}
+.hero .tagline{font-size:clamp(1.15rem,2.6vw,1.5rem);font-weight:500;letter-spacing:.04em;margin:0;color:var(--muted)}
+.hero .tagline .dot{color:var(--orange);padding-inline:.2em}
+.hero .lede{max-width:36rem;margin:1rem auto 0;font-size:1.05rem;line-height:1.6;color:var(--ink)}
+
+/* sections */
+.section{padding-block:clamp(2.5rem,6vw,4rem);border-top:1px solid var(--line)}
+.section h2{font-size:clamp(1.5rem,3vw,2rem);line-height:1.2;margin:0 0 1.25rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.card{background:var(--soft);border-radius:var(--radius);padding:1.4rem 1.5rem;border:1px solid var(--line)}
+.card h3{margin:0 0 .35rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.card p{margin:0;font-size:1.15rem;font-weight:600;word-break:break-word}
+.card a{color:var(--ink);text-decoration-color:var(--orange);text-decoration-thickness:2px}
+.card a:hover{color:var(--link)}
+
+/* page title */
+.page-head{padding-block:clamp(2.5rem,7vw,4.5rem) 1.5rem}
+.page-head h1{font-size:clamp(1.9rem,4.5vw,2.8rem);line-height:1.15;margin:0 0 .75rem}
+.page-head p{max-width:42rem;color:var(--muted);margin:.4rem 0}
+.note{background:#fff6f1;border-left:4px solid var(--orange);padding:.85rem 1rem;border-radius:0 8px 8px 0;max-width:42rem}
+
+/* domain list */
+.domains{list-style:none;margin:0 0 3rem;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(14rem,1fr));gap:.5rem}
+.domains li{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:.65rem .9rem;font-weight:600;font-size:.95rem;letter-spacing:.02em}
+.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:.75rem 1.2rem;border-radius:999px;font-weight:600;margin-top:.75rem}
+.btn:hover{background:var(--link);color:#fff}
+
+/* footer */
+.site-footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+.site-footer .wrap{display:flex;justify-content:space-between;gap:0 1.5rem;flex-wrap:wrap;padding-block:1rem}
+.site-footer p{margin:.4rem 0}
+.site-footer a{color:var(--muted)}
+.site-footer a:hover{color:var(--ink)}
+
+@media (prefers-reduced-motion:no-preference){a,.nav a,.btn{transition:background-color .15s,color .15s}}
+#contact:target .card{animation:vb-flash 1.2s ease-out}
+@keyframes vb-flash{0%{box-shadow:0 0 0 3px var(--orange);background:#fff4ee}100%{box-shadow:0 0 0 0 transparent}}
+html{scroll-behavior:smooth}
