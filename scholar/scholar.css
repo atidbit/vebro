@@ -1,0 +1,59 @@
+/* vebro.net/scholar — builds on ../styles.css */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.sch-head{padding-bottom:1.75rem}
+.eyebrow{margin:0 0 .5rem;font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.eyebrow .dot{color:var(--orange);padding-inline:.15em}
+.sch-head .intro{font-size:1.1rem;color:var(--ink);text-wrap:pretty}
+.sch-links{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.1rem}
+.sch-links .btn{margin-top:0;display:inline-flex;align-items:center;gap:.5rem}
+.btn-ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin:0}
+.metric{background:var(--soft);border:1px solid var(--line);border-radius:var(--radius);padding:1rem 1.25rem;position:relative;overflow:hidden}
+.metric::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:linear-gradient(var(--orange),var(--red))}
+.metric dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:600}
+.metric dd{margin:.15rem 0 0;font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
+.metrics-note{font-size:.85rem;color:var(--muted);margin:.6rem 0 2.5rem;display:flex;flex-wrap:wrap;gap:.25rem .75rem;justify-content:space-between}
+.metrics-note a{color:var(--muted)}
+
+.pubs-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.5rem}
+.pubs-top h2{margin:0}
+.filters{display:flex;flex-wrap:wrap;gap:.5rem}
+.filters input,.filters select{font:inherit;font-size:.95rem;color:var(--ink);background:#fff;border:1px solid #bdb8b2;border-radius:999px;padding:.5rem .9rem;min-height:2.6rem}
+.filters input{width:min(19rem,100%)}
+.filters input:focus,.filters select:focus{outline:3px solid var(--orange);outline-offset:1px;border-color:transparent}
+.f-search{flex:1 1 14rem}
+.f-search input{width:100%}
+.count{font-size:.9rem;color:var(--muted);margin:0 0 1rem}
+
+.year{margin:0;padding-top:1.5rem}
+.year h3{font-size:1.1rem;margin:0 0 .5rem;display:flex;align-items:center;gap:.6rem;color:var(--muted);letter-spacing:.04em}
+.year h3::after{content:"";flex:1;height:1px;background:var(--line)}
+.pub-list{list-style:none;margin:0;padding:0}
+.pub{padding:1rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:.25rem 1.25rem;align-items:start}
+.pub:last-child{border-bottom:0}
+.pub h4{margin:0;font-size:1.05rem;line-height:1.4;font-weight:650;text-wrap:pretty}
+.pub h4 a{color:var(--ink);text-decoration:none;background-image:linear-gradient(var(--orange),var(--orange));background-size:0 2px;background-position:0 100%;background-repeat:no-repeat}
+.pub h4 a:hover{color:var(--link);background-size:100% 2px}
+.pub .authors{margin:.15rem 0 0;font-size:.93rem;color:var(--ink)}
+.pub .meta{margin:.15rem 0 0;font-size:.88rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:.2rem .5rem;align-items:center}
+.pub .meta .venue{font-style:italic}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:.12rem .5rem;border-radius:999px;background:#fff6f1;color:#9a3a10;border:1px solid #f7d2bf;font-style:normal}
+.pub .doi{color:var(--link);word-break:break-all}
+.cites{grid-row:1 / span 3;grid-column:2;text-align:center;min-width:4.25rem;padding:.35rem .5rem;border-radius:10px;background:var(--soft);border:1px solid var(--line)}
+.cites b{display:block;font-size:1.25rem;line-height:1.1;font-variant-numeric:tabular-nums}
+.cites span{font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+mark{background:#ffe2d3;color:inherit;border-radius:3px;padding:0 .1em}
+.empty,.loading{color:var(--muted);padding:1.5rem 0}
+
+@media (max-width:40rem){
+  .metrics{gap:.5rem}
+  .metric{padding:.8rem .9rem}
+  .filters{width:100%}
+  .filters label:not(.f-search){flex:1 1 40%}
+  .filters select{width:100%}
+  .pub{grid-template-columns:1fr}
+  .cites{grid-row:auto;grid-column:auto;justify-self:start;display:flex;gap:.35rem;align-items:baseline;min-width:0;padding:.15rem .6rem;margin-top:.35rem}
+  .cites b{display:inline;font-size:.95rem}
+}
