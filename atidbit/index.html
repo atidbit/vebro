@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Atidbit</title>
+<meta name="description" content="Atidbit — share a tidbit. A demo social app by Vebro Solutions.">
+<meta name="theme-color" content="#0b0d10">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=JSON.parse(localStorage.getItem('atidbit:v1')||'{}').theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="app">
+  <header class="side" id="side" aria-label="Primary"></header>
+  <main id="main" tabindex="-1"></main>
+  <aside class="right" id="right" aria-label="Search and suggestions"></aside>
+</div>
+<nav class="bottom-nav" id="bottom-nav" aria-label="Primary mobile"></nav>
+<button class="fab" id="fab" type="button" data-act="compose" aria-label="Write a new post">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+</button>
+<div id="modal-root"></div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<noscript><p style="padding:2rem;text-align:center">Atidbit needs JavaScript to run.</p></noscript>
+<script src="app.js" defer></script>
+</body>
+</html>
