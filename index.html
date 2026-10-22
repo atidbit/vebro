@@ -40,6 +40,7 @@
     <div class="cards">
       <div class="card"><h3>Email</h3><p><a class="js-c" data-k="m" href="#contact">info [at] vebro [dot] net</a></p></div>
       <div class="card"><h3>Phone</h3><p><a class="js-c" data-k="t" href="#contact">808 [dot] 425 [dot] 9133</a></p></div>
+      <div class="card"><h3>Fax</h3><p><a class="js-c" data-k="f" href="#contact">808 [dot] 748 [dot] 0460</a></p></div>
     </div>
   </div>
 </section>
@@ -51,11 +52,11 @@
   </div>
 </footer>
 <script>
-(function(){var u=["ofni","ten.orbev"],p=["808","425","9133"];
+(function(){var u=["ofni","ten.orbev"],p=["808","425","9133"],f=["808","748","0460"];
 var e=u[0].split("").reverse().join("")+"@"+u[1].split("").reverse().join("");
 document.querySelectorAll(".js-c").forEach(function(a){
  if(a.dataset.k==="m"){a.href="mailto:"+e+(a.dataset.s?"?subject="+encodeURIComponent(a.dataset.s):"");a.textContent=a.dataset.l||e;}
- else{a.href="tel:+1"+p.join("");a.textContent=p.join(".");}
+ else{var n=a.dataset.k==="f"?f:p;a.href="tel:+1"+n.join("");a.textContent=n.join(".");}
 });})();
 </script>
 </body>
