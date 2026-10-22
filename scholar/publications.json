@@ -1,0 +1,261 @@
+{
+  "generated": "2026-10-22T06:36:08Z",
+  "profile": {
+    "name": "Vernon Brown",
+    "orcid": "0000-0003-2469-6172",
+    "orcid_url": "https://orcid.org/0000-0003-2469-6172",
+    "scholar_url": "https://scholar.google.com/citations?user=L6HtnvkAAAAJ&hl=en",
+    "openalex_author": "A5121408223",
+    "links": [
+      {
+        "label": "Homepage",
+        "url": "https://vern.in"
+      },
+      {
+        "label": "PSafe Project",
+        "url": "https://psafe.org"
+      }
+    ]
+  },
+  "metrics": {
+    "works": 9,
+    "citations": 2,
+    "h_index": 1,
+    "i10_index": 0,
+    "note": "Works from ORCID; citations and h-index computed from OpenAlex per-work counts.",
+    "openalex_author_summary": {
+      "works_count": 3,
+      "cited_by_count": 1,
+      "h_index": 1
+    }
+  },
+  "works": [
+    {
+      "title": "When Voice Fails to Scale: Psychological Safety Climate and the Communicative Dynamics of Preventable Failure",
+      "year": 2026,
+      "date": "2026",
+      "venue": "SSRN Electronic Journal",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.2139/ssrn.6340618"
+      ],
+      "url": "https://doi.org/10.2139/ssrn.6340618",
+      "orcid_put_code": 209617710,
+      "openalex_ids": [
+        "W7140284825"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Preprint",
+      "doi": "10.2139/ssrn.6340618",
+      "link": "https://doi.org/10.2139/ssrn.6340618"
+    },
+    {
+      "title": "Management Influence on Psychological Safety: Results from Employees in U.S. Federal Government Organizations in the State of Hawaii",
+      "year": 2025,
+      "date": "2025-12-27",
+      "venue": "International Journal of Business and Social Science",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.30845/ijbss.v16p16"
+      ],
+      "url": null,
+      "orcid_put_code": 200869545,
+      "openalex_ids": [
+        "W7117362727"
+      ],
+      "cited_by": 1,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.30845/ijbss.v16p16",
+      "link": "https://doi.org/10.30845/ijbss.v16p16"
+    },
+    {
+      "title": "The Relationship Between Supervisors’ Transformational Leadership Behaviors & Employees’ Psychological Safety Climate Among U.S. Department of the Navy Civilians",
+      "year": 2025,
+      "date": "2025-09-30",
+      "venue": "CIU",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.13140/rg.2.2.24940.94086"
+      ],
+      "url": "https://www.researchgate.net/doi/10.13140/RG.2.2.24940.94086",
+      "orcid_put_code": 228571120,
+      "openalex_ids": [
+        "W7204112929"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Dissertation",
+      "doi": "10.13140/rg.2.2.24940.94086",
+      "link": "https://doi.org/10.13140/rg.2.2.24940.94086"
+    },
+    {
+      "title": "The Connection Between Ho'oponopono and Psychological Safety",
+      "year": 2024,
+      "date": "2024-02-18",
+      "venue": "Psychological Safety, Advancement and Review",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.8374435"
+      ],
+      "url": "https://zenodo.org/doi/10.5281/zenodo.8374435",
+      "orcid_put_code": 153480759,
+      "openalex_ids": [
+        "W6894216338"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.5281/zenodo.8374435",
+      "link": "https://doi.org/10.5281/zenodo.8374435"
+    },
+    {
+      "title": "Cultivating Psychological Safety in Disaster Response Teams: A Comparative Study of Natural Disasters and Epidemics",
+      "year": 2023,
+      "date": "2023-08-18",
+      "venue": "Psychological Safety, Advancement and Review",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.8260482"
+      ],
+      "url": "https://zenodo.org/record/8260482",
+      "orcid_put_code": 141190097,
+      "openalex_ids": [
+        "W4385996856"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.5281/zenodo.8260482",
+      "link": "https://doi.org/10.5281/zenodo.8260482"
+    },
+    {
+      "title": "Psychological Safety and the Perils of Silencing Dissent: A Rapid Review Meta-Analysis",
+      "year": 2023,
+      "date": "2023-07-13",
+      "venue": "Psychological Safety, Advancement and Review",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.8140984",
+        "10.5281/zenodo.8140985"
+      ],
+      "url": "https://zenodo.org/record/8140985",
+      "orcid_put_code": 138723091,
+      "openalex_ids": [
+        "W4384116091"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.5281/zenodo.8140984",
+      "link": "https://doi.org/10.5281/zenodo.8140984"
+    },
+    {
+      "title": "The Influence of Psychological Safety on Team Dynamics, Performance, and Society: A Rapid Review",
+      "year": 2023,
+      "date": "2023-06-19",
+      "venue": "Psychological Safety, Advancement and Review",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.8053647",
+        "10.5281/zenodo.8053648"
+      ],
+      "url": "https://zenodo.org/record/8053647",
+      "orcid_put_code": 137125907,
+      "openalex_ids": [
+        "W4381154817"
+      ],
+      "cited_by": 1,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.5281/zenodo.8053647",
+      "link": "https://doi.org/10.5281/zenodo.8053647"
+    },
+    {
+      "title": "Supervisor Influence on Employee Psychological Safety: Qualitative Descriptive Study Protocol and Interview Instrument",
+      "year": 2023,
+      "date": "2023-05-31",
+      "venue": "Zenodo",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.18150363"
+      ],
+      "url": "https://zenodo.org/doi/10.5281/zenodo.18150363",
+      "orcid_put_code": 201985275,
+      "openalex_ids": [
+        "W7118938323"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Protocol",
+      "doi": "10.5281/zenodo.18150363",
+      "link": "https://doi.org/10.5281/zenodo.18150363"
+    },
+    {
+      "title": "Supervisor Influence on Psychological Safety in U.S. Federal Government Organizations: A Qualitative Descriptive Study",
+      "year": 2023,
+      "date": "2023-05-31",
+      "venue": "GCU",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.13140/rg.2.2.21585.49769"
+      ],
+      "url": "https://www.researchgate.net/doi/10.13140/RG.2.2.21585.49769",
+      "orcid_put_code": 228570472,
+      "openalex_ids": [
+        "W7204081419"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Dissertation",
+      "doi": "10.13140/rg.2.2.21585.49769",
+      "link": "https://doi.org/10.13140/rg.2.2.21585.49769"
+    }
+  ]
+}
