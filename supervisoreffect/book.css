@@ -40,6 +40,13 @@ cite{font-style:italic}
 .audience li{background:var(--soft);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem;font-size:.95rem;font-weight:600}
 .author-links{color:var(--muted)}
 
+/* research behind the book */
+.research-list{list-style:none;margin:.5rem 0 0;padding:0;display:grid;gap:.85rem}
+.research-list li{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--coral);border-radius:6px;padding:1rem 1.15rem}
+.research-meta{margin:0 0 .35rem !important;font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;font-weight:600;color:var(--muted)}
+.research-list a{font-family:var(--serif);font-size:1.08rem;line-height:1.4;font-weight:600;color:var(--navy);text-decoration-color:var(--coral);text-underline-offset:.2em}
+.research-list a:hover{color:var(--link)}
+
 @media (max-width:44rem){
   .book-hero{grid-template-columns:1fr;text-align:left}
   .book-cover{max-width:15rem;margin-inline:auto}
