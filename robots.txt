@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /forsale.html
-Disallow: /sms/
 Sitemap: https://vebro.net/sitemap.xml
