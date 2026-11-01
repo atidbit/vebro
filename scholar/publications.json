@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-31T17:41:42Z",
+  "generated": "2026-11-01T18:24:56Z",
   "profile": {
     "name": "Vernon Brown",
     "orcid": "0000-0003-2469-6172",
     "orcid_url": "https://orcid.org/0000-0003-2469-6172",
     "scholar_url": "https://scholar.google.com/citations?user=L6HtnvkAAAAJ&hl=en",
-    "openalex_author": null,
+    "openalex_author": "A5121408223",
     "links": [
       {
         "label": "Homepage",
@@ -24,9 +24,9 @@
     "i10_index": 0,
     "note": "Works from ORCID; citations and h-index computed from OpenAlex per-work counts.",
     "openalex_author_summary": {
-      "works_count": null,
-      "cited_by_count": null,
-      "h_index": null
+      "works_count": 3,
+      "cited_by_count": 1,
+      "h_index": 1
     }
   },
   "works": [
