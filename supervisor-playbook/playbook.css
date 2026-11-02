@@ -1,4 +1,6 @@
-/* Playbook extras only. Hero and quote band come from ../supervisoreffect/book.css. */
+/* Playbook extras only. Hero grid comes from ../supervisoreffect/book.css. */
+/* Shared book.css centers the cover. Playbook copy is taller, so pin the cover to the top to match BASU, including phone landscape. */
+.book-hero{align-items:start}
 /* Same button reset as basu.css: styles.css gives .btn a top margin. */
 .book-links .btn{margin-top:0}
 .pb-file{margin:.6rem 0 0;font-size:.88rem;color:var(--muted)}
