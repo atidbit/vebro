@@ -1,4 +1,6 @@
-/* Playbook page extras. Hero layout comes from ../supervisoreffect/book.css. */
+/* Playbook extras only. Hero and quote band come from ../supervisoreffect/book.css. */
+/* Same button reset as basu.css: styles.css gives .btn a top margin. */
+.book-links .btn{margin-top:0}
 .pb-file{margin:.6rem 0 0;font-size:.88rem;color:var(--muted)}
 
 .weeks{list-style:none;margin:.5rem 0 1rem;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.85rem}
