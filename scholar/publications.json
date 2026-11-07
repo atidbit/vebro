@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-04T20:24:50Z",
+  "generated": "2026-11-07T18:01:42Z",
   "profile": {
     "name": "Vernon Brown",
     "orcid": "0000-0003-2469-6172",
@@ -19,7 +19,7 @@
   },
   "metrics": {
     "works": 9,
-    "citations": 2,
+    "citations": 3,
     "h_index": 1,
     "i10_index": 0,
     "note": "Works from ORCID; citations and h-index computed from OpenAlex per-work counts.",
@@ -198,7 +198,7 @@
       "openalex_ids": [
         "W4381154817"
       ],
-      "cited_by": 1,
+      "cited_by": 2,
       "sources": [
         "ORCID",
         "OpenAlex"
