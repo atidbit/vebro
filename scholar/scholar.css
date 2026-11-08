@@ -1,6 +1,6 @@
 /* vebro.net/scholar — builds on ../styles.css */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.sch-head{display:flex;align-items:flex-start;gap:1.5rem;padding-bottom:1.75rem}
+.sch-head{display:flex;align-items:center;gap:1.5rem;padding-bottom:1.75rem}
 .sch-portrait{width:200px;height:200px;border-radius:50%;object-fit:cover;flex-shrink:0}
 .sch-id{flex:1;min-width:0}
 .eyebrow{margin:0 0 .5rem;font-size:.85rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
@@ -50,7 +50,7 @@ mark{background:#ffe2d3;color:inherit;border-radius:3px;padding:0 .1em}
 .empty,.loading{color:var(--muted);padding:1.5rem 0}
 
 @media (max-width:40rem){
-  .sch-head{flex-direction:column}
+  .sch-head{flex-direction:column;align-items:flex-start}
   .metrics{gap:.5rem}
   .metric{padding:.8rem .9rem}
   .filters{width:100%}
