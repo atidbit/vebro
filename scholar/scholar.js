@@ -15,6 +15,10 @@
   function normD(d) { return d ? String(d).trim().toLowerCase().replace(/^https?:\/\/(dx\.)?doi\.org\//, "") : null; }
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+  function extRel(href) {
+    var off = /^https?:\/\//i.test(href) && !/^https?:\/\/(?:www\.)?vebro\.net(?:[\/?#]|$)/i.test(href);
+    return off ? ' target="_blank" rel="noopener noreferrer"' : "";
+  }
   function hl(s, q) {
     s = esc(s); if (!q) return s;
     var re = new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/&/g, "&amp;") + ")", "ig");
@@ -68,12 +72,12 @@
     $("list").innerHTML = keys.map(function (k) {
       return '<section class="year" aria-labelledby="y-' + k + '"><h3 id="y-' + k + '">' + k + '</h3><ol class="pub-list">' +
         groups[k].map(function (w) {
-          var title = w.link ? '<a href="' + esc(w.link) + '" rel="noopener">' + hl(w.title, q) + "</a>" : hl(w.title, q);
+          var title = w.link ? '<a href="' + esc(w.link) + '"' + extRel(w.link) + ">" + hl(w.title, q) + "</a>" : hl(w.title, q);
           var authors = (w.authors || []).map(function (a) { return a === SELF ? "<strong>" + esc(a) + "</strong>" : hl(a, q); }).join(", ");
           var meta = ['<span class="tag">' + esc(w.type) + "</span>"];
           if (w.venue) meta.push('<span class="venue">' + hl(w.venue, q) + "</span>");
           if (w.year) meta.push("<span>" + w.year + "</span>");
-          if (w.doi) meta.push('<a class="doi" href="https://doi.org/' + esc(w.doi) + '" rel="noopener">doi:' + hl(w.doi, q) + "</a>");
+          if (w.doi) meta.push('<a class="doi" href="https://doi.org/' + esc(w.doi) + '" target="_blank" rel="noopener noreferrer">doi:' + hl(w.doi, q) + "</a>");
           var n = w.cited_by || 0;
           return '<li class="pub"><h4>' + title + "</h4>" +
             '<p class="authors">' + authors + "</p>" +
@@ -143,7 +147,7 @@
   }).then(function () {
     return liveRefresh().catch(function () {
       if (!state.works.length) {
-        $("list").innerHTML = '<p class="empty">Publications are unavailable right now. See <a href="https://orcid.org/' + ORCID + '">ORCID</a>.</p>';
+        $("list").innerHTML = '<p class="empty">Publications are unavailable right now. See <a href="https://orcid.org/' + ORCID + '" target="_blank" rel="noopener noreferrer">ORCID</a>.</p>';
       }
     });
   });
