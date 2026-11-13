@@ -1,0 +1,7 @@
+/* It’s Safe to Ask — page extras only. Hero grid comes from ../supervisoreffect/book.css. */
+/* Shared book.css vertically centers the cover. This square cover is shorter than the
+   copy, so pin it to the top — same approach as supervisor-playbook/playbook.css. */
+.book-hero{align-items:start}
+/* Same button reset as basu.css: styles.css gives .btn a top margin. */
+.book-links .btn{margin-top:0}
+.book-format{margin:.75rem 0 0;font-size:.95rem;color:var(--muted)}
