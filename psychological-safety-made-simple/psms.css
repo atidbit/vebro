@@ -1,0 +1,5 @@
+/* Psychological Safety Made Simple — page extras only. Hero grid comes from ../supervisoreffect/book.css. */
+/* Pin the cover to the top of the hero, like BASU, the playbook, and Safe to Ask. */
+.book-hero{align-items:start}
+/* Same button reset as basu.css: styles.css gives .btn a top margin. */
+.book-links .btn{margin-top:0}
