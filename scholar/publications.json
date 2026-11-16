@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07T18:01:42Z",
+  "generated": "2026-11-16T22:52:44Z",
   "profile": {
     "name": "Vernon Brown",
     "orcid": "0000-0003-2469-6172",
@@ -18,18 +18,43 @@
     ]
   },
   "metrics": {
-    "works": 9,
-    "citations": 3,
-    "h_index": 1,
+    "works": 10,
+    "citations": 6,
+    "h_index": 2,
     "i10_index": 0,
     "note": "Works from ORCID; citations and h-index computed from OpenAlex per-work counts.",
     "openalex_author_summary": {
-      "works_count": 3,
+      "works_count": 4,
       "cited_by_count": 0,
       "h_index": 0
     }
   },
   "works": [
+    {
+      "title": "Psychological Safety and Organizational Silence: Mechanisms and Consequences When Voice Is Undervalued",
+      "year": 2026,
+      "date": "2026-11-15",
+      "venue": "Psychological Safety, Advancement and Review",
+      "authors": [
+        "Vernon S. Brown"
+      ],
+      "dois": [
+        "10.5281/zenodo.24262843"
+      ],
+      "url": "https://zenodo.org/doi/10.5281/zenodo.24262843",
+      "orcid_put_code": 233531133,
+      "openalex_ids": [
+        "W7233549089"
+      ],
+      "cited_by": 0,
+      "sources": [
+        "ORCID",
+        "OpenAlex"
+      ],
+      "type": "Article",
+      "doi": "10.5281/zenodo.24262843",
+      "link": "https://doi.org/10.5281/zenodo.24262843"
+    },
     {
       "title": "When Voice Fails to Scale: Psychological Safety Climate and the Communicative Dynamics of Preventable Failure",
       "year": 2026,
@@ -121,7 +146,7 @@
       "openalex_ids": [
         "W6894216338"
       ],
-      "cited_by": 0,
+      "cited_by": 1,
       "sources": [
         "ORCID",
         "OpenAlex"
@@ -172,7 +197,7 @@
       "openalex_ids": [
         "W4384116091"
       ],
-      "cited_by": 1,
+      "cited_by": 3,
       "sources": [
         "ORCID",
         "OpenAlex"
