@@ -328,65 +328,15 @@ h2::after {
   color: var(--slate);
 }
 
-/* Contact form */
-.contact-form {
-  margin-top: 0.25rem;
+/* Contact */
+.contact-cta {
+  margin: 0;
 }
 
-.field {
-  margin: 0 0 1.05rem;
-}
-
-.field label {
-  display: block;
-  margin-bottom: 0.35rem;
-  font-weight: 600;
-  color: var(--navy);
-}
-
-.field input,
-.field select,
-.field textarea {
-  width: 100%;
-  padding: 0.65rem 0.75rem;
-  font: inherit;
-  color: var(--ink);
-  background: #fff;
-  border: 1px solid rgba(12, 40, 80, 0.28);
-  border-radius: 0.4rem;
-}
-
-.field textarea {
-  resize: vertical;
-  min-height: 8rem;
-}
-
-.field input:hover,
-.field select:hover,
-.field textarea:hover {
-  border-color: var(--navy);
-}
-
-.field input:focus-visible,
-.field select:focus-visible,
-.field textarea:focus-visible {
-  border-color: var(--navy);
-  outline: 3px solid var(--focus);
-  outline-offset: 1px;
-}
-
-.form-actions {
-  margin: 1.25rem 0 0;
-}
-
-/* Honeypot: visually hidden, still in the tab order off-screen for bots. */
-.hp {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+.contact-noscript {
+  margin: 0.9rem 0 0;
+  color: var(--slate);
+  font-size: 0.95rem;
 }
 
 /* Footer */

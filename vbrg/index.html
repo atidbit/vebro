@@ -103,45 +103,13 @@
       <div class="wrap wrap-narrow">
         <p class="eyebrow">Start a conversation</p>
         <h2 id="contact-title">Contact</h2>
-        <p class="section-lede">Share a little about what you need and we will get back to you.</p>
-
-        <!-- TODO: Replace REPLACE_ME with the Formspree form ID before launch. No secrets belong in this file. -->
-        <form class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="post">
-          <div class="hp" aria-hidden="true">
-            <label for="website">Leave this field blank</label>
-            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
-          </div>
-
-          <p class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" autocomplete="name" required maxlength="200">
-          </p>
-
-          <p class="field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" autocomplete="email" required maxlength="200">
-          </p>
-
-          <p class="field">
-            <label for="topic">Topic</label>
-            <select id="topic" name="topic" required>
-              <option value="" selected disabled>Select a service</option>
-              <option value="dissertation-advising">Dissertation advising and coaching</option>
-              <option value="research-design">Research design and methods</option>
-              <option value="survey-data-analysis">Survey and data analysis</option>
-              <option value="org-leadership">Organizational and leadership research and consulting</option>
-            </select>
-          </p>
-
-          <p class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="6" required maxlength="5000"></textarea>
-          </p>
-
-          <p class="form-actions">
-            <button type="submit" class="btn btn-primary">Send message</button>
-          </p>
-        </form>
+        <p class="section-lede">The best way to get in touch is by email.</p>
+        <p class="contact-cta">
+          <a class="btn btn-primary" href="#email-me">Email me</a>
+        </p>
+        <noscript>
+          <p class="contact-noscript">Enable JavaScript to use the email button.</p>
+        </noscript>
       </div>
     </section>
   </main>
@@ -153,5 +121,6 @@
       <p class="copyright">&copy; 2026</p>
     </div>
   </footer>
+  <script src="/vbrg/assets/js/contact.js"></script>
 </body>
 </html>
