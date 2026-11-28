@@ -233,6 +233,7 @@ a:hover {
 /* Sections */
 .band {
   padding: 3.25rem 0 3.75rem;
+  scroll-margin-top: 5.5rem;
 }
 
 .band-alt {
@@ -304,6 +305,34 @@ h2::after {
 }
 
 /* About */
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem 1.6rem;
+  margin-bottom: 1.35rem;
+}
+
+.about-photo {
+  display: block;
+  flex: 0 0 auto;
+  width: 11.25rem; /* 180px */
+  height: 11.25rem;
+  object-fit: cover;
+  object-position: center 20%;
+  border-radius: 50%;
+  border: 3px solid var(--navy);
+  box-shadow: 0 0 0 3px var(--cream-alt), 0 0 0 5px var(--gold);
+  background: var(--navy);
+}
+
+.about-heading {
+  min-width: 0;
+}
+
+.about-heading h2 {
+  margin-bottom: 0;
+}
+
 .creds {
   list-style: none;
   margin: 0;
@@ -359,6 +388,22 @@ h2::after {
 }
 
 @media (max-width: 720px) {
+  .about-intro {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-photo {
+    width: 8.25rem; /* 132px */
+    height: 8.25rem;
+  }
+
+  .about-heading h2::after {
+    margin-inline: auto;
+  }
+
   .service-grid {
     grid-template-columns: 1fr;
   }
