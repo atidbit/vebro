@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Remove the noindex meta at launch, when the page is ready to be indexed. -->
+  <meta name="robots" content="noindex">
+  <title>Victor Bravo Research Group — Draft</title>
+  <meta name="description" content="Victor Bravo Research Group provides rigorous social-science research and dissertation advising. A trade name of Vebro Solutions.">
+  <link rel="stylesheet" href="/vbrg/assets/css/site.css">
+  <link rel="icon" href="/vbrg/assets/img/favicon.ico" sizes="16x16 32x32">
+  <link rel="icon" type="image/png" href="/vbrg/assets/img/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/vbrg/assets/img/favicon-16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/vbrg/assets/img/apple-touch-icon.png">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" id="top">
+        <img src="/vbrg/assets/img/logo-wordmark.png" width="200" height="81" alt="">
+        <span class="visually-hidden">Victor Bravo Research Group</span>
+      </a>
+      <nav class="site-nav" aria-label="On this page">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">
+        <img class="hero-logo" src="/vbrg/assets/img/logo-wordmark.png" width="560" height="226" alt="Victor Bravo Research Group">
+      </h1>
+      <p class="tagline">Rigorous social-science research and dissertation advising.</p>
+      <p class="hero-cta">
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+      </p>
+    </section>
+
+    <section id="services" class="band" aria-labelledby="services-title">
+      <div class="wrap">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-title">Services</h2>
+        <ul class="service-grid">
+          <li class="service-card">
+            <h3>Dissertation advising and coaching</h3>
+            <p>Support for doctoral candidates across qualitative and quantitative traditions.</p>
+          </li>
+          <li class="service-card">
+            <h3>Research design and methods</h3>
+            <p>Help shaping research questions, study design, and appropriate methods.</p>
+          </li>
+          <li class="service-card">
+            <h3>Survey and data analysis</h3>
+            <p>Guidance on survey design and on analyzing and interpreting data.</p>
+          </li>
+          <li class="service-card">
+            <h3>Organizational and leadership research and consulting</h3>
+            <p>Applied research and consulting on organizations and leadership.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="band band-alt" aria-labelledby="about-title">
+      <div class="wrap wrap-narrow">
+        <p class="eyebrow">Principal</p>
+        <h2 id="about-title">About Dr. Vernon Brown</h2>
+        <ul class="creds">
+          <li>
+            <span class="cred-award">Ph.D. in Organizational Leadership (quantitative)</span>
+            <span class="cred-meta">Columbia International University, 2025</span>
+          </li>
+          <li>
+            <span class="cred-award">Ed.D. in Organizational Leadership &amp; Development (qualitative)</span>
+            <span class="cred-meta">Grand Canyon University, 2023</span>
+          </li>
+          <li>
+            <span class="cred-award">Professor of Applied Behavioral Sciences</span>
+            <span class="cred-meta">University of Arizona Global Campus</span>
+          </li>
+          <li>
+            <span class="cred-award">MBA in IT Management</span>
+            <span class="cred-meta">American Military University</span>
+          </li>
+          <li>
+            <span class="cred-award">BS in Homeland Security</span>
+            <span class="cred-meta">Thomas Edison State University</span>
+          </li>
+          <li>
+            <span class="cred-award">BS in Business Administration</span>
+            <span class="cred-meta">Hawaii Pacific University</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="band" aria-labelledby="contact-title">
+      <div class="wrap wrap-narrow">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 id="contact-title">Contact</h2>
+        <p class="section-lede">Share a little about what you need and we will get back to you.</p>
+
+        <!-- TODO: Replace REPLACE_ME with the Formspree form ID before launch. No secrets belong in this file. -->
+        <form class="contact-form" action="https://formspree.io/f/REPLACE_ME" method="post">
+          <div class="hp" aria-hidden="true">
+            <label for="website">Leave this field blank</label>
+            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+          </div>
+
+          <p class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required maxlength="200">
+          </p>
+
+          <p class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required maxlength="200">
+          </p>
+
+          <p class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="" selected disabled>Select a service</option>
+              <option value="dissertation-advising">Dissertation advising and coaching</option>
+              <option value="research-design">Research design and methods</option>
+              <option value="survey-data-analysis">Survey and data analysis</option>
+              <option value="org-leadership">Organizational and leadership research and consulting</option>
+            </select>
+          </p>
+
+          <p class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required maxlength="5000"></textarea>
+          </p>
+
+          <p class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>Victor Bravo Research Group is a trade name of Vebro Solutions.</p>
+      <p>Not affiliated with or endorsed by the U.S. Department of the Navy or Department of Defense.</p>
+      <p class="copyright">&copy; 2026</p>
+    </div>
+  </footer>
+</body>
+</html>
